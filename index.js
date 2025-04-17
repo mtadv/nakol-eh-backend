@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 
 app.use(cors());
@@ -125,4 +125,6 @@ Recipe_AR: ...
   }
 });
 
+
+// ✅ Only ONE app.listen
 app.listen(PORT, () => console.log(`🍽️ Nakol-Eh server running on port ${PORT}`));
